@@ -1,0 +1,1206 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ретрит McK Partners — приглашение</title>
+<meta name="description" content="Приглашение на корпоративный ретрит McK Partners. Заполните форму участия и данные для организации вылета.">
+<meta name="theme-color" content="#011833">
+
+<meta property="og:title" content="Ретрит McK Partners — приглашение">
+<meta property="og:description" content="Корпоративный ретрит McK Partners — 15–18 октября 2026 года.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="McK Партнёры">
+<meta property="og:image" content="https://static.tildacdn.com/tild3264-6539-4634-b661-366264323235/photo.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Ретрит McK Partners — приглашение">
+<meta name="twitter:description" content="Корпоративный ретрит McK Partners — 15–18 октября 2026 года.">
+<meta name="twitter:image" content="https://static.tildacdn.com/tild3264-6539-4634-b661-366264323235/photo.jpg">
+
+<link rel="shortcut icon" href="https://static.tildacdn.com/tild6334-3232-4131-b365-376563663362/FAV.jpg" type="image/x-icon">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&amp;family=Raleway:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+
+<style>
+/* ============ 1. Токены (айдентика McK Partners) ============ */
+:root{
+  --bg:#F5EFE6;            /* тёплый бежевый фон страницы */
+  --bg-alt:#FAF3EA;        /* бежевый фон секции формы */
+  --card:#FFFFFF;          /* белые карточки */
+  --navy:#011833;          /* глубокий тёмно-синий (герой McK) */
+  --brand:#112865;         /* фирменный синий */
+  --brand-dark:#0B1C4A;
+  --accent:#2582E0;        /* интерактивный акцент */
+  --accent-soft:#EEF4FD;
+  --ink:#232838;           /* основной текст */
+  --body:#3D4457;
+  --muted:#656A79;
+  --line:#E3E3E3;
+  --line-input:#DADCE0;
+  --red:#D93025;
+  --orange:#E8710A;
+  --radius:8px;
+  --shadow-card:0 1px 2px rgba(1,24,51,.06), 0 12px 34px rgba(1,24,51,.05);
+  --shadow-soft:0 1px 2px rgba(1,24,51,.05);
+  --font-ui:'Raleway',Arial,sans-serif;
+  --font-display:'Lora',Georgia,'Times New Roman',serif;
+  --ease:cubic-bezier(.22,1,.36,1);
+}
+
+/* ============ 2. База ============ */
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{
+  margin:0;background:var(--bg);color:var(--ink);
+  font-family:var(--font-ui);font-size:17px;line-height:1.6;font-weight:400;
+  -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;
+}
+img{display:block;max-width:100%}
+button,input,select,textarea{font-family:inherit;font-size:inherit;color:inherit}
+p{margin:0 0 16px;max-width:68ch}
+b,strong{font-weight:600}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:3px}
+
+.skip{
+  position:absolute;left:16px;top:-64px;z-index:99;
+  background:var(--brand);color:#fff;padding:11px 18px;border-radius:4px;
+  font-size:15px;text-decoration:none;transition:top .2s ease;
+}
+.skip:focus{top:16px}
+
+.wrap{width:min(1120px,100% - 40px);margin:0 auto}
+.section{padding:clamp(64px,8vw,112px) 0}
+
+/* ============ 3. Типографика ============ */
+.eyebrow{
+  margin:0 0 22px;font-size:12px;font-weight:600;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--brand);
+}
+.kicker{
+  margin:0 0 16px;font-size:12px;font-weight:600;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--muted);
+}
+h1{
+  margin:0 0 26px;font-family:var(--font-display);font-weight:500;
+  font-size:clamp(40px,6.2vw,76px);line-height:1.04;letter-spacing:-.02em;
+  color:var(--navy);text-wrap:balance;
+}
+h2{
+  margin:0 0 22px;font-family:var(--font-display);font-weight:500;
+  font-size:clamp(30px,3.6vw,46px);line-height:1.12;letter-spacing:-.015em;
+  color:var(--navy);text-wrap:balance;
+}
+.lead{
+  margin:0;font-size:clamp(17px,1.6vw,20px);line-height:1.6;
+  color:var(--body);max-width:54ch;text-wrap:pretty;
+}
+
+/* ============ 4. Логотип ============ */
+.brandmark{display:block;width:118px;height:47px;color:var(--brand);flex:none}
+a.brandlink{text-decoration:none;line-height:0}
+
+/* ============ 5. Герой ============ */
+.hero{padding:26px 0 0}
+.hero__top{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:6px}
+.hero__tag{
+  font-size:12px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--muted);text-align:right;
+}
+.hero__grid{
+  display:grid;grid-template-columns:1.06fr .94fr;
+  gap:clamp(32px,5vw,72px);align-items:center;
+  padding:clamp(40px,6vw,72px) 0 clamp(56px,7vw,88px);
+}
+.hero__actions{display:flex;align-items:center;gap:22px;flex-wrap:wrap;margin-top:36px}
+.hero__note{font-size:14px;color:var(--muted);margin:20px 0 0}
+
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;
+  min-height:52px;padding:14px 30px;border:1px solid transparent;border-radius:4px;
+  font-size:16px;font-weight:600;letter-spacing:.01em;text-decoration:none;cursor:pointer;
+  transition:background-color .18s ease,box-shadow .18s ease,transform .12s ease,border-color .18s ease;
+}
+.btn--primary{background:var(--brand);color:#fff;box-shadow:0 8px 24px rgba(17,40,101,.22)}
+.btn--primary:hover{background:var(--brand-dark);box-shadow:0 12px 30px rgba(17,40,101,.3)}
+.btn--primary:active{transform:translateY(1px)}
+.btn--ghost{color:var(--brand);border-color:rgba(17,40,101,.3);background:transparent}
+.btn--ghost:hover{border-color:var(--brand);background:rgba(17,40,101,.05)}
+
+.hero__visual{
+  position:relative;margin:0;border-radius:6px;overflow:hidden;
+  background:linear-gradient(160deg,#0a2f6b 0%,#011833 100%);
+  box-shadow:0 30px 70px rgba(1,24,51,.22);aspect-ratio:1206/1181;
+}
+.hero__visual img{width:100%;height:100%;object-fit:cover}
+.hero__visual::after{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(180deg,rgba(1,24,51,0) 45%,rgba(1,24,51,.62));
+}
+.hero__chip{
+  position:absolute;left:20px;bottom:20px;right:20px;z-index:1;
+  display:inline-flex;align-items:center;gap:10px;width:fit-content;
+  padding:10px 16px;border-radius:4px;background:rgba(1,24,51,.7);
+  -webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);
+  color:#fff;font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;
+}
+.hero__chip svg{flex:none;width:15px;height:15px;opacity:.9}
+
+/* ============ 6. О ретрите ============ */
+.about__body p{font-size:17px;color:var(--body);text-wrap:pretty}
+.about__body p b{color:var(--navy)}
+.about__body a{color:var(--brand);text-decoration:underline;text-underline-offset:3px}
+.about__body a:hover{color:var(--accent)}
+.about__layout{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,440px);gap:clamp(28px,4vw,56px);align-items:start}
+.about__photo{position:relative;width:100%;margin:0}
+.about__photo img{display:block;width:100%;height:auto;border-radius:6px}
+.about__chip{
+  position:absolute;left:16px;bottom:16px;z-index:1;
+  display:inline-flex;align-items:center;gap:10px;max-width:calc(100% - 32px);
+  padding:10px 16px;border-radius:4px;background:rgba(1,24,51,.7);
+  -webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);
+  color:#fff;font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;
+  text-decoration:none;transition:background .2s var(--ease);
+}
+.about__chip:hover{background:rgba(1,24,51,.92)}
+.about__chip svg{flex:none;width:15px;height:15px;opacity:.9}
+
+/* ============ 6.5 Программа путешествия ============ */
+.program__days{position:relative;max-width:760px;padding-left:26px;border-left:2px solid rgba(17,40,101,.14)}
+.day{position:relative;padding:0 0 26px}
+.day:last-child{padding-bottom:0}
+.day::before{
+  content:"";position:absolute;left:-32px;top:6px;width:10px;height:10px;
+  border-radius:50%;background:var(--bg);border:2px solid var(--brand);
+}
+.day p{margin:0;font-size:16.5px;line-height:1.65;color:var(--body);text-wrap:pretty}
+.day b{color:var(--navy);font-weight:600;white-space:nowrap}
+.program__gallery{
+  display:grid;grid-template-columns:repeat(4,1fr);
+  grid-template-rows:87fr 72fr;gap:12px;
+  margin-top:clamp(26px,3vw,40px);aspect-ratio:3.25;
+}
+.program__gallery figure{margin:0;position:relative;border-radius:6px;overflow:hidden;background:#E9E2D6}
+.program__gallery img{width:100%;height:100%;object-fit:cover;transition:transform .5s var(--ease)}
+.program__gallery figure:hover img{transform:scale(1.04)}
+.g-aerial{grid-column:1;grid-row:1/3}
+.g-cabana{grid-column:2;grid-row:1}
+.g-room{grid-column:3;grid-row:1}
+.g-beach{grid-column:4;grid-row:1/3}
+.g-sunset{grid-column:2;grid-row:2}
+.g-deck{grid-column:3;grid-row:2}
+
+/* ============ 7. Секция формы ============ */
+.form-section{background:var(--bg-alt);border-top:1px solid rgba(17,40,101,.08)}
+.form-wrap{width:min(768px,100% - 32px);margin:0 auto}
+#form{scroll-margin-top:12px}
+
+.progress{
+  display:none;position:sticky;top:0;z-index:30;
+  background:var(--bg-alt);padding:16px 0 14px;margin-bottom:22px;
+}
+.progress.is-visible{display:block}
+.progress__track{height:4px;border-radius:99px;background:#E7DFD3;overflow:hidden}
+.progress__fill{
+  display:block;height:100%;width:50%;border-radius:99px;
+  background:linear-gradient(90deg,var(--brand),var(--accent));
+  transition:width .5s var(--ease);
+}
+.progress__label{
+  display:flex;justify-content:space-between;gap:12px;
+  margin-top:11px;font-size:13px;letter-spacing:.02em;color:var(--muted);
+}
+
+/* --- Карточки в стиле Google Forms --- */
+.card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  box-shadow:var(--shadow-card);overflow:hidden;margin-bottom:24px;
+}
+/* --- Карточка-гейт «Участие в ретрите» --- */
+.choice .card__body{padding-top:26px}
+.choice__q{margin-top:0;padding-top:0;border-top:0}
+.card__head{
+  display:flex;justify-content:space-between;align-items:flex-start;gap:18px;
+  flex-wrap:wrap;padding:26px clamp(20px,4vw,36px) 6px;
+}
+.card__title{
+  margin:0;font-family:var(--font-display);font-weight:500;
+  font-size:clamp(24px,2.6vw,30px);line-height:1.15;letter-spacing:-.01em;color:var(--navy);
+}
+.card__sub{margin:7px 0 0;font-size:15px;color:var(--muted);line-height:1.5}
+.card__body{padding:6px clamp(20px,4vw,36px) clamp(22px,3vw,30px)}
+
+.required-note{margin:18px 0 0;font-size:13px;color:var(--red)}
+.required-note .req{margin-right:2px}
+
+/* --- Вопросы --- */
+fieldset{border:0;margin:0;padding:0;min-width:0}
+.q{border-top:1px solid var(--line);margin-top:22px;padding-top:24px}
+.q:first-of-type{margin-top:20px}
+.q__label,legend.q__label{
+  display:block;padding:0;font-size:16px;font-weight:500;line-height:1.45;color:var(--ink);
+}
+.req{color:var(--red);margin-left:3px}
+.q__optional{margin-left:8px;font-size:13px;font-weight:400;color:var(--muted)}
+.q__hint{margin:6px 0 0;font-size:13px;color:var(--muted)}
+.city-other{margin-top:16px;padding-top:0;border-top:0}
+.city-other .field{margin-top:6px}
+
+.field{position:relative;margin-top:8px}
+.field .err{display:none;margin:9px 0 0;font-size:13px;line-height:1.45;color:var(--red)}
+.field.is-invalid .err{display:block}
+
+/* --- Текстовые поля (подчёркивание как в Google Forms) --- */
+.answer{
+  display:block;width:100%;background:transparent;
+  border:0;border-bottom:1px solid var(--line-input);border-radius:0;
+  padding:11px 2px;font-size:16px;line-height:1.4;color:var(--ink);
+  transition:border-color .16s ease,box-shadow .16s ease;
+}
+.answer::placeholder{color:#9AA0A6}
+.answer:focus{outline:none;border-bottom-color:var(--brand);box-shadow:0 1px 0 0 var(--brand)}
+.field.is-invalid .answer{border-bottom-color:var(--red);box-shadow:0 1px 0 0 var(--red)}
+textarea.answer{min-height:92px;resize:vertical;line-height:1.55}
+
+/* --- Дата --- */
+input[type="date"].answer{max-width:250px;min-height:44px}
+input[type="date"].answer::-webkit-calendar-picker-indicator{cursor:pointer;opacity:.55}
+input[type="date"].answer::-webkit-calendar-picker-indicator:hover{opacity:.9}
+
+/* --- Радио-кнопки --- */
+.opts{display:flex;flex-direction:column;gap:2px;margin-top:12px}
+.opt{
+  display:flex;align-items:flex-start;gap:14px;
+  margin:0 -12px;padding:10px 12px;border-radius:6px;
+  font-size:15px;line-height:1.45;cursor:pointer;min-height:44px;
+  transition:background-color .15s ease;
+}
+.opt:hover{background:#F5F7FB}
+.opt:has(input:checked){background:var(--accent-soft)}
+.opt input{
+  appearance:none;-webkit-appearance:none;flex:none;
+  width:18px;height:18px;margin:3px 0 0;border:2px solid #9AA0A6;border-radius:50%;
+  background:#fff;cursor:pointer;
+  transition:border-color .15s ease,box-shadow .15s ease,background-color .15s ease;
+}
+.opt input:checked{
+  background:var(--accent);border-color:var(--accent);
+  box-shadow:inset 0 0 0 3.5px #fff;
+}
+.opt input:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.opt__text{min-width:0}
+.opt__name{display:block;font-weight:600;color:var(--ink)}
+.opt__meta{
+  display:block;margin-top:5px;font-size:13px;line-height:1.6;color:var(--muted);
+  font-variant-numeric:tabular-nums;
+}
+
+/* --- Загрузка скана паспорта --- */
+.drop{
+  position:relative;display:flex;flex-direction:column;align-items:center;gap:6px;
+  margin-top:14px;padding:26px 18px;text-align:center;cursor:pointer;
+  border:1.5px dashed var(--line-input);border-radius:8px;background:#FCFBF8;
+  transition:border-color .18s ease,background-color .18s ease,box-shadow .18s ease;
+}
+.drop:hover{border-color:var(--brand);background:#F7F9FE}
+.drop:focus-within{border-color:var(--brand);box-shadow:0 0 0 3px rgba(37,130,224,.2)}
+.drop.is-drag{border-color:var(--accent);background:var(--accent-soft)}
+.drop input[type="file"]{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:pointer}
+.drop__icon{color:var(--brand);display:block}
+.drop__title{font-size:15px;font-weight:500;color:var(--ink)}
+.drop__title span{color:var(--accent);text-decoration:underline;text-underline-offset:2px}
+.drop__hint{font-size:13px;color:var(--muted)}
+.privacy{margin:10px 0 0;font-size:12.5px;line-height:1.5;color:var(--muted)}
+
+.files{list-style:none;margin:14px 0 0;padding:0;display:flex;flex-direction:column;gap:8px}
+.files:empty{display:none}
+.files li{
+  display:flex;align-items:center;gap:12px;padding:10px 12px;
+  border:1px solid var(--line);border-radius:6px;background:#fff;font-size:14px;
+  animation:fadeUp .3s var(--ease) both;
+}
+.files__icon{flex:none;color:var(--brand)}
+.files__name{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--ink)}
+.files__size{flex:none;font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums}
+.files__rm{
+  flex:none;width:32px;height:32px;border:0;border-radius:50%;
+  background:transparent;color:var(--muted);font-size:20px;line-height:1;cursor:pointer;
+  transition:background-color .15s ease,color .15s ease;
+}
+.files__rm:hover{background:#F1EEEA;color:var(--red)}
+.files__rm:focus-visible{outline:2px solid var(--red);outline-offset:2px}
+
+/* --- Раскрывающийся блок паспорта --- */
+.reveal{
+  overflow:hidden;max-height:0;opacity:0;visibility:hidden;
+  transition:max-height .5s var(--ease),opacity .35s ease,visibility 0s linear .5s;
+}
+.reveal.is-open{
+  opacity:1;visibility:visible;
+  transition:max-height .55s var(--ease),opacity .4s ease .1s,visibility 0s;
+}
+
+/* --- Сообщения --- */
+.no-msg{
+  display:none;background:var(--card);border:1px solid var(--line);
+  border-left:3px solid var(--brand);border-radius:var(--radius);
+  padding:22px 26px;margin-bottom:24px;box-shadow:var(--shadow-soft);line-height:1.6;
+}
+.no-msg.show{display:block;animation:fadeUp .4s var(--ease) both}
+.no-msg b{color:var(--navy)}
+
+.banner{
+  display:none;margin:4px 0 18px;padding:13px 16px;border-radius:6px;
+  background:#FDF0EF;border:1px solid #F3C9C6;color:#A32B22;font-size:14px;line-height:1.5;
+}
+.banner.show{display:block;animation:fadeUp .3s var(--ease) both}
+.nojs{
+  margin:4px 0 18px;padding:13px 16px;border-radius:6px;
+  background:#FDF0EF;border:1px solid #F3C9C6;color:#A32B22;font-size:14px;
+}
+
+.actions{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:26px}
+.submit{
+  background:var(--brand);color:#fff;border:0;border-radius:4px;
+  min-height:48px;padding:13px 34px;font-size:16px;font-weight:600;letter-spacing:.01em;
+  cursor:pointer;box-shadow:0 6px 18px rgba(17,40,101,.2);
+  transition:background-color .18s ease,transform .1s ease,box-shadow .18s ease;
+}
+.submit:hover{background:var(--brand-dark);box-shadow:0 10px 24px rgba(17,40,101,.26)}
+.submit:active{transform:translateY(1px)}
+.submit[disabled]{opacity:.6;cursor:default;box-shadow:none}
+.clear{
+  color:var(--orange);font-size:14px;font-weight:500;text-decoration:none;
+  padding:8px 2px;border-radius:3px;
+}
+.clear:hover{text-decoration:underline;text-underline-offset:3px}
+
+.success{
+  display:none;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  box-shadow:var(--shadow-card);padding:clamp(30px,5vw,48px);text-align:center;
+}
+.success.show{display:block;animation:fadeUp .5s var(--ease) both}
+.success__icon{
+  width:56px;height:56px;margin:0 auto 20px;border-radius:50%;
+  background:var(--brand);display:grid;place-items:center;
+}
+.success h2{font-size:clamp(26px,3vw,34px);margin-bottom:12px}
+.success p{margin:0 auto;color:var(--body);max-width:46ch;text-wrap:pretty}
+
+@keyframes fadeUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+
+/* ============ 8. Футер ============ */
+.footer{background:var(--navy);color:rgba(255,255,255,.7);padding:38px 0}
+.footer__inner{
+  display:flex;align-items:center;justify-content:space-between;gap:18px;
+  flex-wrap:wrap;font-size:14px;
+}
+.footer .brandmark{color:#fff;width:110px;height:44px}
+.footer a{color:#fff;text-decoration:none}
+.footer a:hover{opacity:.85}
+
+/* ============ 9. Адаптив ============ */
+@media (max-width:960px){
+  .hero__grid{grid-template-columns:1fr;padding-bottom:clamp(44px,8vw,64px)}
+  .about__layout{grid-template-columns:1fr;gap:0}
+  .about__photo{width:min(640px,100%);margin:34px auto 0}
+  .program__gallery{grid-template-columns:repeat(2,1fr);grid-template-rows:none;aspect-ratio:auto}
+  .program__gallery img{height:100%}
+  .g-aerial{grid-column:1;grid-row:1}
+  .g-beach{grid-column:2;grid-row:1}
+  .g-cabana{grid-column:1;grid-row:2}
+  .g-room{grid-column:2;grid-row:2}
+  .g-sunset{grid-column:1/3;grid-row:3}
+  .g-deck{grid-column:1/3;grid-row:4}
+}
+@media (max-width:640px){
+  body{font-size:16px}
+  .wrap{width:min(1120px,100% - 32px)}
+  .hero__tag{font-size:11px;letter-spacing:.1em;max-width:44%}
+  .brandmark{width:100px;height:40px}
+  .hero__chip{left:14px;right:14px;bottom:14px;font-size:11px;letter-spacing:.06em;padding:9px 13px}
+  .about__chip{left:12px;bottom:12px;font-size:10.5px;letter-spacing:.06em;padding:9px 13px;gap:7px}
+  .program__gallery{gap:8px}
+  .day{padding-bottom:22px}
+  .form-wrap{width:min(768px,100% - 24px)}
+  .progress{padding-top:12px}
+  .card__head{flex-direction:column;gap:14px}
+  .q{padding-top:20px;margin-top:18px}
+  .opt{margin:0 -8px;padding:10px 8px}
+  input[type="date"].answer{max-width:100%}
+  .actions{flex-direction:column-reverse;align-items:stretch}
+  .submit{width:100%}
+  .clear{text-align:center;padding:10px 0}
+  .footer__inner{justify-content:center;text-align:center}
+}
+
+/* ============ 10. Уважение к настройкам движения ============ */
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{
+    animation-duration:.01ms !important;animation-iteration-count:1 !important;
+    transition-duration:.01ms !important;transition-delay:0s !important;
+  }
+}
+</style>
+<noscript><style>.reveal{max-height:none!important;opacity:1!important;visibility:visible!important}.progress{display:block!important}</style></noscript>
+</head>
+<body>
+
+<!-- Логотип McK Partners (белый оригинал, перекрашен через currentColor) -->
+<svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true" focusable="false"><symbol id="mck-logo" viewBox="0 0 115 46" fill="none"><path d="M10.3849 17.3162C8.07481 12.4016 5.7711 7.48706 3.40979 2.46369C3.38419 2.83485 3.3458 3.11001 3.3458 3.38518C3.3586 7.1863 3.3778 10.9938 3.39699 14.7949C3.39699 14.9549 3.39699 15.1149 3.41619 15.2749C3.48658 15.998 3.87053 16.4587 4.54885 16.6059C4.9584 16.6955 5.38074 16.7339 5.82229 16.7979C5.82229 16.9515 5.82229 17.0859 5.82229 17.2586C4.03691 17.2586 2.25154 17.2586 0.414966 17.2586C0.389369 17.1243 0.363772 16.9771 0.338175 16.8363C0.421365 16.7915 0.472558 16.7531 0.523752 16.7467C0.773321 16.7147 1.02289 16.7083 1.26606 16.6507C1.91878 16.5035 2.31553 16.0556 2.38592 15.3709C2.43071 14.9741 2.43071 14.571 2.43071 14.1742C2.44991 10.1491 2.46911 6.12403 2.48831 2.10534C2.48831 1.40142 2.22594 0.979078 1.57322 0.755106C1.15727 0.614323 0.715728 0.550331 0.242188 0.447944C0.242188 0.326359 0.242188 0.179178 0.242188 0C1.778 0 3.2946 0 4.84321 0C6.97414 4.51144 9.10508 9.03567 11.2808 13.6495C11.396 13.4511 11.4984 13.3039 11.5752 13.1376C12.3431 11.5442 13.1046 9.95075 13.8597 8.35095C15.0179 5.91286 16.1826 3.47476 17.3408 1.03027C17.5008 0.691113 17.6608 0.351956 17.808 0.0191978C19.331 0.0191978 20.8284 0.0191978 22.3578 0.0191978C22.3578 0.179178 22.3578 0.307161 22.3578 0.460742C21.9739 0.511936 21.6155 0.55033 21.2572 0.614322C20.5404 0.742306 20.1821 1.16465 20.1245 1.91336C20.1117 2.09254 20.1117 2.27172 20.1117 2.45089C20.1181 6.3544 20.1245 10.2579 20.1373 14.1614C20.1373 14.5838 20.1757 14.9997 20.1693 15.4221C20.1629 15.9916 20.4253 16.4139 21.1292 16.5931C21.5003 16.6891 21.8907 16.7147 22.3194 16.7723C22.3194 16.9195 22.3194 17.0795 22.3194 17.2842C22.121 17.2842 21.9547 17.2842 21.7819 17.2842C19.9709 17.2842 18.1535 17.2778 16.3426 17.2778C16.2274 17.2778 16.0994 17.3098 15.997 17.2714C15.8946 17.233 15.7538 17.1243 15.7474 17.0347C15.741 16.9451 15.8626 16.7915 15.9586 16.7595C16.157 16.6955 16.381 16.7083 16.5857 16.6635C17.4944 16.4907 17.7696 16.1644 17.7696 15.2045C17.776 12.2993 17.7696 9.40042 17.7696 6.49519C17.7696 5.31133 17.7696 4.13388 17.7696 2.95003C17.7696 2.77725 17.7696 2.59807 17.6672 2.3997C16.477 4.86979 15.2803 7.33988 14.0901 9.80997C12.8934 12.2929 11.6968 14.7758 10.5065 17.2586C10.4873 17.2906 10.4361 17.3034 10.3849 17.3162Z" fill="currentColor"></path><path d="M54.9501 16.7211C54.9501 16.9451 54.9501 17.0859 54.9501 17.2587C52.5184 17.2587 50.0931 17.2587 47.6294 17.2587C47.6102 17.1115 47.591 16.9643 47.5654 16.7979C47.6742 16.7787 47.751 16.7595 47.8214 16.7531C48.1669 16.7211 48.5253 16.7531 48.8517 16.6572C49.3636 16.5164 49.4468 16.1836 49.0884 15.7805C48.6981 15.3389 48.2757 14.9294 47.8598 14.507C46.2536 12.8624 44.641 11.2178 43.0284 9.57964C42.7852 9.33647 42.5612 9.0613 42.1709 8.91412C42.1581 9.1253 42.1389 9.27248 42.1389 9.42606C42.1389 11.2882 42.1453 13.1504 42.1517 15.0126C42.1581 16.2412 42.3821 16.5036 43.5723 16.6764C43.7835 16.7083 43.9947 16.7211 44.2634 16.7531C44.2698 16.9131 44.2762 17.0731 44.289 17.2587C42.1197 17.2587 40.008 17.2587 37.8578 17.2587C37.8578 17.0795 37.8578 16.9387 37.8578 16.7787C38.2098 16.7275 38.5361 16.6955 38.8497 16.6252C39.432 16.4908 39.6688 16.222 39.7456 15.6077C39.784 15.2941 39.7968 14.9678 39.7968 14.6478C39.7968 10.7251 39.7968 6.79599 39.7904 2.87328C39.7904 2.49573 39.7712 2.11177 39.7328 1.73422C39.6688 1.04311 39.368 0.697551 38.6961 0.563168C38.5106 0.524773 38.3122 0.518373 38.1202 0.492776C37.845 0.46078 37.845 0.46078 37.8066 0.0256348C39.9568 0.0256348 42.1005 0.0256348 44.257 0.0256348C44.3594 0.319998 44.3018 0.479978 43.9755 0.499176C43.6683 0.518374 43.3611 0.556768 43.0604 0.633559C42.5101 0.767942 42.1517 1.17749 42.1517 1.72782C42.1389 4.01234 42.1453 6.29045 42.1453 8.58136C42.4077 8.65175 42.5037 8.44058 42.6252 8.3062C44.2762 6.50802 45.9208 4.70985 47.559 2.89888C47.9174 2.50852 48.2501 2.08618 48.5509 1.65103C48.9157 1.1135 48.7749 0.761543 48.1669 0.595164C48.0006 0.55037 47.8278 0.531172 47.655 0.511974C47.5014 0.492777 47.3478 0.486377 47.1623 0.473579C47.1431 0.339196 47.1239 0.211211 47.0983 0.038433C48.954 0.038433 50.7778 0.038433 52.64 0.038433C52.7232 0.307199 52.7104 0.492777 52.3648 0.499176C51.3473 0.505575 50.5666 1.01751 49.8883 1.75342C48.4229 3.34682 46.9575 4.94022 45.4921 6.53362C45.1209 6.93677 44.7434 7.33352 44.3466 7.76227C44.9481 8.36379 45.5113 8.93332 46.0808 9.49005C48.0966 11.4738 50.1123 13.4512 52.1344 15.4349C52.9152 16.19 53.7406 16.8363 54.9501 16.7211Z" fill="currentColor"></path><path d="M35.3042 8.4085C35.1826 8.4085 35.0546 8.4085 34.9203 8.4085C34.8627 8.15254 34.8115 7.92216 34.7603 7.69179C34.5171 6.60393 33.8324 5.94481 32.8149 5.70164C31.7079 5.43288 30.5944 5.50327 29.5065 5.87442C28.1435 6.34156 27.2348 7.28225 26.7997 8.69007C26.3197 10.2387 26.2941 11.8193 26.7805 13.3551C27.4076 15.326 28.7898 16.4395 30.7672 16.7083C31.7271 16.8426 32.6933 16.8234 33.6212 16.4523C34.0756 16.2731 34.4403 15.9852 34.6323 15.5244C34.8435 15.0317 35.0098 14.5197 35.1826 14.0142C35.2786 13.739 35.2658 13.739 35.6882 13.6686C35.5922 14.7885 35.4962 15.8892 35.3938 17.0538C34.5683 17.1626 33.7364 17.3034 32.8981 17.3738C31.5287 17.4826 30.1657 17.5274 28.809 17.1882C27.1644 16.7787 25.8334 15.902 24.8991 14.4174C23.5233 12.2352 23.5809 8.23573 26.6845 6.16239C28.2331 5.12572 29.9737 4.82495 31.7782 4.90174C32.527 4.93374 33.2757 5.04253 34.0244 5.08732C34.4211 5.11292 34.8243 5.09372 35.2978 5.09372C35.3042 6.13039 35.3042 7.23745 35.3042 8.4085Z" fill="currentColor"></path><path d="M72.829 45.2297C72.8418 45.3193 72.8674 45.3833 72.8674 45.4537C72.8674 45.5177 72.8418 45.5881 72.829 45.6393C71.1332 45.6393 69.4694 45.6393 67.812 45.6393C67.7224 45.3897 67.7352 45.2425 67.9912 45.2169C68.0616 45.2105 68.1384 45.2105 68.2088 45.1977C68.9191 45.0761 69.1879 44.7946 69.1943 44.0779C69.2071 42.6188 69.2007 41.1598 69.2007 39.7008C69.2007 39.6112 69.1815 39.528 69.1623 39.3936C67.2681 39.3936 65.3867 39.3936 63.467 39.3936C63.4542 39.56 63.435 39.7136 63.435 39.8736C63.4286 41.243 63.4286 42.6124 63.4286 43.9819C63.4286 44.8458 63.6077 45.0505 64.4716 45.1721C64.5804 45.1849 64.6828 45.1977 64.83 45.2105C64.8364 45.3513 64.8492 45.4793 64.8556 45.6265C63.147 45.6265 61.4832 45.6265 59.813 45.6265C59.7426 45.4089 59.7234 45.2489 59.9858 45.2105C60.005 45.2105 60.0242 45.2041 60.037 45.2041C61.0545 44.9801 61.2209 44.8202 61.2273 43.8091C61.2464 40.7823 61.2464 37.7555 61.24 34.7222C61.24 33.8775 61.0033 33.6408 60.133 33.4808C59.941 33.4424 59.7106 33.4552 59.8066 33.0968C61.4576 33.0968 63.1214 33.0968 64.8108 33.0968C64.8108 33.2056 64.8108 33.3016 64.8108 33.4168C64.5676 33.4744 64.3117 33.5128 64.0877 33.596C63.6845 33.7496 63.4414 34.0247 63.4414 34.4919C63.4478 35.7909 63.435 37.0899 63.4286 38.3826C63.4286 38.453 63.4478 38.5234 63.467 38.6385C65.3547 38.6385 67.2361 38.6385 69.1559 38.6385C69.175 38.5298 69.207 38.4146 69.207 38.293C69.2134 37.0643 69.2198 35.8421 69.2134 34.6134C69.207 33.8903 68.9703 33.6216 68.2536 33.4808C67.8696 33.404 67.8696 33.404 67.8248 33.0776C69.495 33.0776 71.1652 33.0776 72.8226 33.0776C72.8802 33.2888 72.861 33.404 72.6434 33.468C71.4788 33.7879 71.4468 33.8327 71.4468 35.0102C71.4404 37.9474 71.4468 40.8847 71.4404 43.8219C71.4404 43.9499 71.434 44.0779 71.4468 44.1994C71.4852 44.7178 71.7027 44.9801 72.2147 45.1017C72.3811 45.1593 72.573 45.1849 72.829 45.2297Z" fill="currentColor"></path><path d="M34.0168 33.0968C34.1128 33.0776 34.164 33.0584 34.2152 33.0584C36.1989 33.0584 38.1827 33.0456 40.1664 33.0648C40.9087 33.0712 41.6254 33.2568 42.2973 33.6023C43.2956 34.1142 43.8396 34.9269 43.9099 36.0468C44.0315 37.9666 43.0333 39.432 41.1519 40.0911C40.1536 40.4367 39.2449 40.507 37.7411 40.3343C37.7219 40.4686 37.6963 40.603 37.6899 40.7374C37.6835 41.7805 37.6771 42.83 37.6899 43.873C37.6963 44.8009 37.8819 45.0121 38.7842 45.1529C38.925 45.1785 39.0658 45.1913 39.2257 45.2169C39.2321 45.3512 39.2385 45.4728 39.2449 45.6264C37.4787 45.6264 35.7446 45.6264 33.9656 45.6264C33.9528 45.5048 33.9464 45.3896 33.9336 45.2425C34.1768 45.1913 34.4007 45.1337 34.6247 45.0953C35.1238 44.9993 35.3606 44.6729 35.4374 44.2058C35.463 44.0266 35.463 43.8474 35.463 43.6682C35.4694 40.7118 35.4694 37.7554 35.4694 34.799C35.4694 33.9351 35.239 33.6535 34.3879 33.4615C34.1128 33.3975 34.1128 33.3975 34.0168 33.0968ZM37.7411 33.6535C37.7411 35.7716 37.7411 37.813 37.7411 39.9247C38.317 39.8927 38.861 39.9119 39.3793 39.8159C40.3136 39.6432 40.9663 39.0736 41.2927 38.1777C41.619 37.2755 41.6446 36.3412 41.4143 35.4133C41.2159 34.607 40.6975 34.0439 39.904 33.7879C39.2193 33.5639 38.5026 33.6023 37.7411 33.6535Z" fill="currentColor"></path><path d="M93.0696 45.2359C93.076 45.3639 93.0824 45.4855 93.0952 45.6391C91.3482 45.6391 89.6268 45.6391 87.8607 45.6391C87.8479 45.5175 87.8415 45.3895 87.8223 45.2295C87.995 45.1975 88.1358 45.1783 88.2702 45.1527C89.0189 45.0184 89.2941 44.6984 89.3261 43.9561C89.3325 43.8473 89.3325 43.7385 89.3325 43.6297C89.3325 40.6733 89.3325 37.7169 89.3325 34.7668C89.3325 33.9349 89.0957 33.6598 88.2766 33.4614C88.1038 33.423 87.8479 33.455 87.9055 33.103C88.0206 33.0838 88.1358 33.0519 88.2574 33.0519C90.0236 33.0519 91.7898 33.0327 93.5559 33.0647C94.1255 33.0775 94.7142 33.1542 95.2581 33.3078C97.1651 33.8582 97.9842 35.2724 97.5938 37.3137C97.3315 38.6768 96.4292 39.5086 95.1877 40.0078C94.1959 40.4045 93.1592 40.4749 92.1033 40.3981C91.9434 40.3853 91.7834 40.3789 91.5978 40.3725C91.5786 40.4685 91.5402 40.5517 91.5402 40.6349C91.5402 41.7676 91.5338 42.9066 91.553 44.0393C91.5658 44.8008 91.7258 44.9672 92.4745 45.1271C92.6537 45.1655 92.8456 45.1975 93.0696 45.2359ZM91.5594 39.867C92.0009 39.867 92.3977 39.8862 92.7944 39.867C93.9783 39.8094 94.8742 39.0735 95.1749 37.9344C95.3733 37.1729 95.4053 36.3986 95.2517 35.6307C95.0662 34.7156 94.5414 34.0437 93.6263 33.7878C92.9672 33.6022 92.2825 33.647 91.5658 33.6982C91.5594 35.7651 91.5594 37.7937 91.5594 39.867Z" fill="currentColor"></path><path d="M31.7525 45.1976C31.7525 45.3895 31.7525 45.5111 31.7525 45.6519C30.0504 45.6519 28.361 45.6519 26.6588 45.6519C26.5628 45.3703 26.6076 45.2296 26.9211 45.2104C27.1195 45.1976 27.3179 45.172 27.5035 45.108C28.009 44.9416 28.1306 44.7048 27.9514 44.2057C27.7338 43.617 27.4971 43.0346 27.2667 42.4459C27.1131 42.0619 26.9659 41.678 26.7996 41.2493C25.4301 41.2493 24.0671 41.2493 22.6529 41.2493C22.2753 42.2923 21.8914 43.3354 21.5266 44.3849C21.4242 44.6856 21.5074 44.8712 21.8082 44.9992C22.0642 45.1144 22.3585 45.1656 22.6337 45.2168C22.8769 45.2551 22.9344 45.3703 22.8513 45.6199C21.6482 45.6199 20.4324 45.6199 19.1781 45.6199C19.1141 45.4023 19.0757 45.2104 19.4021 45.172C20.1892 45.0696 20.5795 44.5448 20.8355 43.8665C21.5522 42.0044 22.2689 40.1358 22.9984 38.2736C23.6384 36.629 24.2911 34.9908 24.9438 33.3526C24.995 33.2183 25.0526 33.0903 25.1102 32.9495C25.3597 32.9303 25.5901 32.9111 25.8525 32.8855C25.9933 33.2247 26.1276 33.551 26.262 33.8838C27.5739 37.2178 28.8921 40.5517 30.1847 43.8921C30.4535 44.6408 30.8503 45.172 31.7525 45.1976ZM22.9088 40.6029C24.1759 40.6029 25.3341 40.6029 26.5436 40.6029C25.9549 38.9583 25.3789 37.3585 24.771 35.6564C24.1375 37.3329 23.536 38.9263 22.9088 40.6029Z" fill="currentColor"></path><path d="M54.4429 45.2359C54.4429 45.3639 54.4429 45.4855 54.4429 45.6263C52.6448 45.6263 50.8466 45.6263 49.0484 45.6263C48.946 45.3383 49.0036 45.1847 49.3108 45.1847C49.4004 45.1847 49.4899 45.1719 49.5795 45.1591C50.3282 45.0311 50.5906 44.7752 50.6226 44.0265C50.661 43.233 50.661 42.4395 50.6674 41.646C50.6738 39.2143 50.6674 36.7826 50.661 34.3445C50.661 34.1845 50.6482 34.0309 50.6354 33.8133C49.8163 33.8133 49.0292 33.7877 48.2485 33.8837C47.9349 33.9221 47.711 34.1269 47.583 34.3829C47.359 34.8308 47.167 35.298 46.9751 35.7587C46.8855 35.9763 46.8343 36.2066 46.7575 36.4626C46.6103 36.4626 46.4631 36.4626 46.252 36.4626C46.3543 35.2212 46.4503 34.0053 46.5463 32.7575C46.6359 32.7703 46.7639 32.7511 46.8279 32.8023C47.0966 33.0262 47.4102 33.0518 47.743 33.0518C50.4626 33.0454 53.1887 33.0518 55.9083 33.0518C56.2539 33.0518 56.5931 33.039 56.8746 32.7959C56.9322 32.7511 57.041 32.7639 57.1562 32.7383C57.2138 33.9669 57.265 35.1636 57.3162 36.3474C57.0154 36.501 56.9002 36.3922 56.8042 36.1427C56.5867 35.5731 56.3563 35.0036 56.1003 34.4533C55.8891 34.0053 55.518 33.8005 55.0125 33.8069C54.3149 33.8197 53.6174 33.8069 52.8815 33.8069C52.8687 33.9861 52.8495 34.1461 52.8495 34.2997C52.8495 37.4161 52.8495 40.5325 52.8495 43.6553C52.8495 44.8776 53.0031 45.0375 54.219 45.1847C54.2829 45.2039 54.3533 45.2167 54.4429 45.2359Z" fill="currentColor"></path><path d="M99.7954 45.6392C99.725 45.3768 99.757 45.2233 100.045 45.2041C100.205 45.1977 100.365 45.1529 100.518 45.1081C100.915 44.9801 101.152 44.7049 101.203 44.289C101.229 44.1098 101.235 43.9306 101.235 43.7514C101.235 40.795 101.242 37.8386 101.242 34.8822C101.242 34.7926 101.242 34.703 101.235 34.6134C101.21 33.9415 100.954 33.6343 100.294 33.4935C100.186 33.4743 100.077 33.4615 99.9745 33.4359C99.789 33.3847 99.7698 33.2632 99.8529 33.084C101.53 33.084 103.219 33.084 104.896 33.084C104.972 33.3144 104.947 33.4359 104.691 33.4871C103.488 33.7303 103.417 33.8263 103.417 35.0549C103.417 36.098 103.417 37.1411 103.417 38.2417C103.628 38.2545 103.82 38.2609 104.012 38.2737C104.64 38.3057 105.273 38.3121 105.9 38.3633C106.502 38.4145 107.065 38.6129 107.583 38.9073C108.549 39.4512 109.087 40.2831 109.157 41.3965C109.266 43.2587 108.313 44.6985 106.534 45.2809C105.977 45.46 105.375 45.5816 104.793 45.6072C103.532 45.6584 102.272 45.6328 101.011 45.6328C100.614 45.6392 100.224 45.6392 99.7954 45.6392ZM103.43 44.9865C103.846 44.9865 104.204 44.9993 104.556 44.9865C105.587 44.9545 106.335 44.4106 106.674 43.4379C107.014 42.4716 106.969 41.4925 106.758 40.5071C106.726 40.3535 106.642 40.2063 106.559 40.0655C105.971 39.08 104.652 38.5937 103.43 38.9137C103.43 40.9102 103.43 42.9004 103.43 44.9865Z" fill="currentColor"></path><path d="M110.097 33.071C111.716 33.071 113.316 33.071 114.935 33.071C114.999 33.2502 115.005 33.391 114.794 33.455C114.621 33.5062 114.436 33.5254 114.276 33.5894C113.854 33.7558 113.617 34.0437 113.617 34.5365C113.623 37.7297 113.617 40.9165 113.623 44.1097C113.623 44.7304 113.834 44.9672 114.455 45.1143C114.628 45.1527 114.801 45.1911 114.999 45.2295C114.999 45.3767 114.999 45.5111 114.999 45.6583C113.335 45.6583 111.703 45.6583 110.033 45.6583C110.033 45.5175 110.033 45.3831 110.033 45.2615C110.321 45.1783 110.584 45.1271 110.833 45.0375C111.166 44.916 111.364 44.6792 111.39 44.308C111.403 44.0585 111.428 43.8025 111.428 43.5529C111.435 40.6157 111.441 37.6785 111.447 34.7412C111.447 33.9285 111.223 33.6534 110.417 33.487C110.212 33.4422 109.995 33.4294 110.097 33.071Z" fill="currentColor"></path><path d="M85.0517 42.2861C85.1861 42.2861 85.3077 42.2861 85.4165 42.2861C85.5509 42.4332 85.1093 45.0249 84.8597 45.6712C81.7625 45.6712 78.6653 45.6712 75.5233 45.6712C75.5105 45.5369 75.4913 45.4025 75.4785 45.2681C75.7729 45.1977 76.0416 45.1529 76.2976 45.0761C76.6624 44.9737 76.8735 44.7178 76.9247 44.3402C76.9503 44.129 76.9759 43.9115 76.9759 43.6939C76.9823 40.6863 76.9823 37.6722 76.9759 34.6646C76.9759 33.8967 76.752 33.6535 75.9905 33.4872C75.7793 33.4424 75.4721 33.4936 75.5745 33.0648C78.6205 33.052 81.6729 33.0328 84.7701 33.02C84.8021 33.9287 84.8341 34.895 84.8725 35.8485C84.591 35.9956 84.4886 35.8677 84.399 35.6565C84.2134 35.2277 84.015 34.8054 83.7911 34.3958C83.5543 33.9735 83.1959 33.7623 82.684 33.7751C81.6601 33.7943 80.6299 33.7623 79.5996 33.7559C79.4908 33.7559 79.3884 33.7751 79.2924 33.7815C79.1581 34.1847 79.1133 37.9474 79.2412 38.6577C79.35 38.6705 79.4716 38.6897 79.5932 38.6897C80.4379 38.6833 81.289 38.6833 82.1337 38.6641C82.7416 38.6449 82.8312 38.5617 82.9848 37.973C83.036 37.7618 83.068 37.5507 83.1064 37.3395C83.1512 37.0963 83.3047 37.0835 83.5031 37.1475C83.5031 38.4593 83.5031 39.752 83.5031 41.0254C83.2407 41.1406 83.1895 41.0062 83.132 40.827C83.0232 40.4879 82.9016 40.1487 82.7608 39.8224C82.6456 39.5536 82.4153 39.4 82.1209 39.4C81.1674 39.3936 80.2139 39.4 79.2668 39.4C79.1453 39.848 79.1517 44.3146 79.2796 44.8521C79.3756 44.8649 79.478 44.8905 79.5804 44.8905C80.6427 44.8841 81.7049 44.8521 82.7736 44.8649C83.6695 44.8777 84.239 44.449 84.5718 43.6619C84.7318 43.2203 84.8725 42.7788 85.0517 42.2861Z" fill="currentColor"></path><path d="M78.825 31.5482C78.2363 31.5546 77.7115 31.0491 77.7051 30.4668C77.6988 29.8716 78.1211 29.4557 78.7354 29.4493C79.3305 29.4429 79.8233 29.9036 79.8361 30.486C79.8489 31.0427 79.3689 31.5418 78.825 31.5482Z" fill="currentColor"></path><path d="M82.2035 31.5546C81.5955 31.5418 81.122 31.0427 81.1412 30.4283C81.154 29.8716 81.6531 29.4301 82.2418 29.4556C82.805 29.4748 83.2593 29.9292 83.2593 30.4667C83.2593 31.0491 82.7602 31.561 82.2035 31.5546Z" fill="currentColor"></path><path d="M15.2237 29.4619C15.2237 28.6684 15.4349 28.2972 15.998 28.0797C16.0492 28.0669 16.094 28.0541 16.1452 28.0477C16.5035 27.9837 16.8619 27.9453 17.2458 27.8941C17.2458 27.7405 17.2458 27.6125 17.2458 27.4525C17.0411 27.4525 16.8427 27.4525 16.6379 27.4525C16.6379 27.4461 16.6379 27.4397 16.6379 27.4333C14.4238 27.4333 12.2161 27.4333 10.0147 27.4333H7.39107C6.48239 27.4333 5.5737 27.4333 4.66502 27.4333C4.64582 27.4333 4.62022 27.4333 4.60102 27.4333C3.1932 27.4333 1.77898 27.4333 0.364754 27.4333C0.243169 27.4333 0.121585 27.4333 0 27.4333C0 27.6125 0 27.7597 0 27.8813C0.473541 27.9837 0.915086 28.0477 1.33103 28.1885C1.36943 28.2013 1.40782 28.2205 1.44622 28.2332C1.84297 28.5084 1.97735 28.9948 1.97735 29.865C1.97095 34.2101 1.96455 38.5616 1.95816 42.9066C1.95816 43.1946 1.94536 43.4889 1.93896 43.7769C1.91976 44.4232 1.619 44.8008 1.11986 44.9608C0.87669 45.0311 0.620722 45.0823 0.339158 45.1463C0.351956 45.3191 0.358355 45.4791 0.364754 45.6199C2.20132 45.6199 3.9931 45.6199 5.80407 45.6199C5.79127 45.4151 5.78488 45.2615 5.77848 45.1079C5.66969 45.0823 5.5993 45.0695 5.52891 45.0567C4.40265 44.8648 4.25547 44.6664 4.25547 43.3162C4.24907 38.5872 4.24907 33.8645 4.25547 29.1355C4.25547 28.9692 4.28746 28.8092 4.30666 28.63H5.16415V28.6236C5.90646 28.6236 6.64877 28.6236 7.39107 28.6236H9.61799C10.4563 28.6236 11.301 28.6236 12.1521 28.6236V28.63H12.8688C12.888 28.8732 12.9008 29.0459 12.9072 29.2123C12.9072 32.4055 12.9008 35.5859 12.8944 38.7791C12.888 40.3661 12.888 41.9403 12.8624 43.5273C12.8432 44.5192 12.568 44.8776 11.7617 45.0439C11.5825 45.0823 11.4098 45.1079 11.205 45.1463C11.2178 45.3319 11.2306 45.4727 11.2434 45.6327C13.0736 45.6327 14.8653 45.6327 16.6699 45.6327C16.6699 45.4471 16.6699 45.3191 16.6635 45.1847C16.6635 45.1527 16.6251 45.1207 16.5995 45.0759C16.5291 45.0631 16.4587 45.0503 16.3819 45.0375C15.3581 44.8008 15.1981 44.596 15.1981 43.3034C15.1917 42.0107 15.2045 40.7181 15.2045 39.4255C15.2109 36.1043 15.2173 32.7831 15.2237 29.4619Z" fill="currentColor"></path></symbol></svg>
+
+<a class="skip" href="#form">Перейти к форме</a>
+
+<!-- ================= ГЕРОЙ ================= -->
+<header class="hero">
+  <div class="wrap">
+    <div class="hero__top">
+      <a class="brandlink" href="https://mck.partners" aria-label="McK Партнёры — на сайт компании">
+        <svg class="brandmark" role="img" aria-label="McK Partners"><use href="#mck-logo"></use></svg>
+      </a>
+      <span class="hero__tag">McK retreat<br>15—18 October 2026</span>
+    </div>
+
+    <div class="hero__grid">
+      <div>
+        <p class="eyebrow">McK retreat · 15—18 October 2026</p>
+        <h1>Приглашение на ретрит McK Partners</h1>
+        <p class="lead">Четыре дня вне привычного ритма — чтобы встретиться, перезагрузиться и провести время вместе.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#form">Заполнить форму</a>
+          <a class="btn btn--ghost" href="#about">О ретрите</a>
+        </div>
+        <p class="hero__note">Ответы нужны для организации вылета и бронирования программы.</p>
+      </div>
+
+      <figure class="hero__visual">
+        <img src="assets/trip/towers.jpg"
+             width="1206" height="1181" alt="Башни Etihad Towers — The St. Regis Abu Dhabi в вечернем свете" fetchpriority="high" decoding="async">
+        <figcaption class="hero__chip">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M2 16.5 21 9.8l1.7-.6c.9-.3 1.3-1.4.7-2.1-.5-.7-1.6-.9-2.4-.5l-1.7.6-6.8-4.9-2.1.8 4.4 4.6-4.4 1.7-3.2-1.6-1.6.6 2.6 3-2.6 3.4L2 16.5Z" fill="currentColor"/></svg>
+          Абу-Даби · 15—18 октября 2026
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- ================= О РЕТРИТЕ ================= -->
+  <section class="section" id="about" aria-labelledby="about-title">
+    <div class="wrap">
+      <p class="kicker" id="about-title">О ретрите</p>
+      <div class="about__layout">
+        <div class="about__body">
+          <p>Нашей доброй традицией стали совместные путешествия - и в этом году мы приглашаем вас прекрасно провести несколько дней вместе в Абу-Даби, ОАЭ.</p>
+          <p>Даты путешествия: <b>15-18 октября</b></p>
+        </div>
+
+        <figure class="about__photo">
+          <img src="assets/trip/lobby.jpg" width="1005" height="1280" alt="Лобби The St. Regis: люстры и двойные лестницы с красными коврами" loading="lazy" decoding="async">
+          <a class="about__chip" href="https://www.marriott.com/en-us/hotels/auhrx-the-st-regis-abu-dhabi/photos/" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="1.8"/></svg>
+            Отель: The St. Regis Abu Dhabi
+          </a>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ПРОГРАММА ПУТЕШЕСТВИЯ ================= -->
+  <section class="section program" id="program" aria-labelledby="program-title">
+    <div class="wrap">
+      <p class="kicker">По дням</p>
+      <h2 id="program-title">Программа путешествия</h2>
+
+      <div class="program__days">
+        <div class="day"><p><b>15.10 (чт):</b> Перелёт в Абу-Даби и отдых в отеле после перелёта.</p></div>
+        <div class="day"><p><b>16.10 (пт):</b> На Ваш выбор: пляжный отдых в отеле, посещение достопримечательностей - Мечеть шейха Зайда, Лувр, Музей естественной истории, Остров Яс, SeaWorld, TeamLab Phenomena - или парка развлечений Ferrari World.</p></div>
+        <div class="day"><p><b>17.10 (сб):</b> Вояж на яхте по Персидскому заливу и вечерний гала ужин.</p></div>
+        <div class="day"><p><b>18.10 (вс):</b> Утренний отдых в отеле и возвращение в Москву.</p></div>
+      </div>
+
+      <div class="program__gallery">
+        <figure class="g-aerial"><img src="assets/trip/yacht-aerial.jpg" width="1099" height="1280" alt="Яхта с высоты на бирюзовой воде" loading="lazy" decoding="async"></figure>
+        <figure class="g-cabana"><img src="assets/trip/beach-cabana.jpg" width="1280" height="854" alt="Кабаны и шезлонги на белом песке, Emirates Palace на горизонте" loading="lazy" decoding="async"></figure>
+        <figure class="g-room"><img src="assets/trip/room.jpg" width="800" height="534" alt="Номер отеля с панорамным видом на побережье" loading="lazy" decoding="async"></figure>
+        <figure class="g-beach"><img src="assets/trip/beach.jpg" width="987" height="1280" alt="Пляж отеля с белым песком и лежаками" loading="lazy" decoding="async"></figure>
+        <figure class="g-sunset"><img src="assets/trip/yacht-sunset.jpg" width="1280" height="714" alt="Яхта в закатном свете над Персидским заливом" loading="lazy" decoding="async"></figure>
+        <figure class="g-deck"><img src="assets/trip/yacht-deck.jpg" width="1280" height="709" alt="Палуба яхты с видом на скайлайн Абу-Даби" loading="lazy" decoding="async"></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ФОРМА ================= -->
+  <section class="section form-section" id="form" aria-labelledby="form-title">
+    <div class="wrap form-wrap">
+      <h2 id="form-title" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap">Форма участия в ретрите</h2>
+
+      <noscript><div class="nojs">Для отправки формы необходимо включить JavaScript и обновить страницу.</div></noscript>
+
+      <form id="retreatForm" novalidate>
+        <!-- ---------- Гейт: участие в ретрите ---------- -->
+        <div class="card" id="choiceCard">
+          <div class="card__body choice__body">
+            <fieldset class="q field choice__q" id="participationField" aria-describedby="participation-err">
+              <legend class="q__label">Участие в ретрите<span class="req" aria-hidden="true">*</span></legend>
+              <div class="opts">
+                <label class="opt"><input type="radio" name="participation" value="Да" id="participation" required><span class="opt__text">Да</span></label>
+                <label class="opt"><input type="radio" name="participation" value="Нет"><span class="opt__text">Нет</span></label>
+              </div>
+              <p class="err" id="participation-err" role="alert"></p>
+            </fieldset>
+          </div>
+        </div>
+
+        <!-- Сообщение при «Нет» -->
+        <div class="no-msg" id="noMsg" role="status">
+          <b>Спасибо, что ответили!</b><br>Ждём вас в следующий раз.
+        </div>
+
+        <!-- Прогресс: появляется после выбора «Да» -->
+        <div class="progress" id="progressBar" role="progressbar" aria-valuemin="1" aria-valuemax="2" aria-valuenow="1" aria-valuetext="Шаг 1 из 2 · Ретрит">
+          <div class="progress__track"><i class="progress__fill" id="progressFill"></i></div>
+          <div class="progress__label"><span id="stepLabel">Шаг 1 из 2 · Ретрит</span><span>McK Partners</span></div>
+        </div>
+
+        <!-- ---------- Форма: раскрывается только при «Да» ---------- -->
+        <div class="reveal" id="formPanel">
+          <!-- Карточка 1 -->
+          <div class="card">
+            <div class="card__head">
+              <div>
+                <h2 class="card__title">Ретрит</h2>
+                <p class="card__sub">проведение ретрита McK Partners</p>
+              </div>
+            </div>
+
+            <div class="card__body">
+              <p class="required-note"><span class="req" aria-hidden="true">*</span>Обязательный вопрос</p>
+
+              <!-- 1. Фамилия, Имя -->
+              <div class="q">
+                <label class="q__label" for="name">Фамилия, Имя<span class="req" aria-hidden="true">*</span></label>
+                <div class="field">
+                  <input class="answer" id="name" name="name" type="text" placeholder="Мой ответ"
+                         autocomplete="name" required aria-required="true" aria-describedby="name-err">
+                  <p class="err" id="name-err" role="alert"></p>
+                </div>
+              </div>
+
+              <!-- 2–3. Город вылета и выбор рейса -->
+              <div id="travelFields">
+                <fieldset class="q field">
+                  <legend class="q__label">Город вылета<span class="req" aria-hidden="true">*</span></legend>
+                  <div class="opts">
+                    <label class="opt"><input type="radio" name="city" value="Москва" required><span class="opt__text">Москва</span></label>
+                    <label class="opt"><input type="radio" name="city" value="Санкт-Петербург"><span class="opt__text">Санкт-Петербург</span></label>
+                    <label class="opt"><input type="radio" name="city" value="Новосибирск"><span class="opt__text">Новосибирск</span></label>
+                    <label class="opt"><input type="radio" name="city" value="Пермь"><span class="opt__text">Пермь</span></label>
+                    <label class="opt"><input type="radio" name="city" value="Казань"><span class="opt__text">Казань</span></label>
+                    <label class="opt"><input type="radio" name="city" value="Другое"><span class="opt__text">Другое</span></label>
+                  </div>
+                  <p class="err" id="city-err" role="alert"></p>
+                </fieldset>
+
+                <div class="q city-other" hidden>
+                  <label class="q__label" for="city-other">Название города<span class="req" aria-hidden="true">*</span></label>
+                  <div class="field">
+                    <input class="answer" id="city-other" name="city_other" type="text" placeholder="Мой ответ"
+                           autocomplete="off" required aria-required="true" aria-describedby="city-other-err">
+                    <p class="err" id="city-other-err" role="alert"></p>
+                  </div>
+                </div>
+
+                <fieldset class="q field">
+                  <legend class="q__label">Выбор рейса<span class="req" aria-hidden="true">*</span></legend>
+                  <div class="opts">
+                    <label class="opt">
+                      <input type="radio" name="flight" value="Аэрофлот SU 530/SU 531" required>
+                      <span class="opt__text">
+                        <span class="opt__name">Аэрофлот</span>
+                        <span class="opt__meta">SU 530, 15.10.26 08:05–15:50, Москва — Абу-Даби<br>SU 531, 18.10.26 16:50–22:40, Абу-Даби — Москва</span>
+                      </span>
+                    </label>
+                    <label class="opt">
+                      <input type="radio" name="flight" value="Etihad EY 842/EY 843">
+                      <span class="opt__text">
+                        <span class="opt__name">Etihad</span>
+                        <span class="opt__meta">EY 842, 15.10.26 12:50–19:35, Москва — Абу-Даби<br>EY 843, 18.10.26 14:20–19:20, Абу-Даби — Москва</span>
+                      </span>
+                    </label>
+                  </div>
+                  <p class="err" id="flight-err" role="alert"></p>
+                </fieldset>
+              </div>
+
+              <!-- 4. Комментарии -->
+              <div class="q">
+                <label class="q__label" for="comment">Комментарии<span class="q__optional">Необязательный вопрос</span></label>
+                <div class="field">
+                  <p class="q__hint" id="comment-hint">Если Вам важно улететь раньше или позже, пожалуйста, укажите это в поле «Комментарии».</p>
+                  <textarea class="answer" id="comment" name="comment" placeholder="Мой ответ" rows="3" aria-describedby="comment-hint"></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <!-- ---------- Карточка 2 ---------- -->
+        <div class="card" id="passportPanel">
+            <div class="card__head">
+              <div>
+                <h2 class="card__title">Данные заграничного паспорта</h2>
+                <p class="card__sub">Для оформления вылета нам нужны данные вашего заграничного паспорта</p>
+              </div>
+            </div>
+
+            <div class="card__body">
+              <p class="required-note"><span class="req" aria-hidden="true">*</span>Обязательный вопрос</p>
+
+              <!-- Фамилия и имя латиницей -->
+              <div class="q">
+                <label class="q__label" for="latin">Фамилия имя латиницей, как в паспорте<span class="req" aria-hidden="true">*</span></label>
+                <div class="field">
+                  <input class="answer" id="latin" name="latin" type="text" placeholder="Мой ответ"
+                         autocomplete="off" spellcheck="false" required aria-required="true" aria-describedby="latin-err">
+                  <p class="err" id="latin-err" role="alert"></p>
+                </div>
+              </div>
+
+              <!-- Серия и номер -->
+              <div class="q">
+                <label class="q__label" for="passportNo">Серия номер заграничного паспорта<span class="req" aria-hidden="true">*</span></label>
+                <div class="field">
+                  <input class="answer" id="passportNo" name="passportNo" type="text" placeholder="Мой ответ"
+                         autocomplete="off" spellcheck="false" required aria-required="true" aria-describedby="passportNo-err passportNo-hint">
+                  <p class="q__hint" id="passportNo-hint">Например: 71 1234567</p>
+                  <p class="err" id="passportNo-err" role="alert"></p>
+                </div>
+              </div>
+
+              <!-- Дата выдачи -->
+              <div class="q">
+                <label class="q__label" for="issued">Дата выдачи<span class="req" aria-hidden="true">*</span></label>
+                <div class="field">
+                  <input class="answer" id="issued" name="issued" type="date" max="2026-10-15"
+                         required aria-required="true" aria-describedby="issued-err issued-hint">
+                  <p class="q__hint" id="issued-hint">дд.мм.гггг</p>
+                  <p class="err" id="issued-err" role="alert"></p>
+                </div>
+              </div>
+
+              <!-- Срок действия -->
+              <div class="q">
+                <label class="q__label" for="expiry">Срок действия заграничного паспорта<span class="req" aria-hidden="true">*</span></label>
+                <div class="field">
+                  <input class="answer" id="expiry" name="expiry" type="date" min="2026-10-15"
+                         required aria-required="true" aria-describedby="expiry-err expiry-hint">
+                  <p class="q__hint" id="expiry-hint">дд.мм.гггг · паспорт должен действовать на даты поездки</p>
+                  <p class="err" id="expiry-err" role="alert"></p>
+                </div>
+              </div>
+
+              <!-- Орган выдачи -->
+              <div class="q">
+                <label class="q__label" for="authority">Кем выдан / орган выдачи<span class="req" aria-hidden="true">*</span></label>
+                <div class="field">
+                  <input class="answer" id="authority" name="authority" type="text" placeholder="Мой ответ"
+                         required aria-required="true" aria-describedby="authority-err">
+                  <p class="err" id="authority-err" role="alert"></p>
+                </div>
+              </div>
+
+              <!-- Дата рождения -->
+              <div class="q">
+                <label class="q__label" for="birth">Дата рождения<span class="req" aria-hidden="true">*</span></label>
+                <div class="field">
+                  <input class="answer" id="birth" name="birth" type="date" required aria-required="true" aria-describedby="birth-err birth-hint">
+                  <p class="q__hint" id="birth-hint">дд.мм.гггг</p>
+                  <p class="err" id="birth-err" role="alert"></p>
+                </div>
+              </div>
+
+              <!-- Пол -->
+              <fieldset class="q field">
+                <legend class="q__label">Пол<span class="req" aria-hidden="true">*</span></legend>
+                <div class="opts">
+                  <label class="opt"><input type="radio" name="sex" value="Муж" required><span class="opt__text">Муж</span></label>
+                  <label class="opt"><input type="radio" name="sex" value="Жен"><span class="opt__text">Жен</span></label>
+                </div>
+                <p class="err" id="sex-err" role="alert"></p>
+              </fieldset>
+
+              <!-- Гражданство -->
+              <div class="q">
+                <label class="q__label" for="citizenship">Гражданство<span class="q__optional">Необязательный вопрос</span></label>
+                <div class="field">
+                  <input class="answer" id="citizenship" name="citizenship" type="text" placeholder="Мой ответ" autocomplete="country-name">
+                </div>
+              </div>
+
+              <!-- Телефон -->
+              <div class="q">
+                <label class="q__label" for="phone">Контактный телефон<span class="req" aria-hidden="true">*</span></label>
+                <div class="field">
+                  <input class="answer" id="phone" name="phone" type="text" inputmode="numeric"
+                         placeholder="+7 (___) ___-__-__" autocomplete="tel" required aria-required="true"
+                         aria-describedby="phone-err phone-hint">
+                  <p class="q__hint" id="phone-hint">Формат: +7 (___) ___-__-__</p>
+                  <p class="err" id="phone-err" role="alert"></p>
+                </div>
+              </div>
+
+              <!-- Email -->
+              <div class="q">
+                <label class="q__label" for="email">Email<span class="req" aria-hidden="true">*</span></label>
+                <div class="field">
+                  <input class="answer" id="email" name="email" type="email" placeholder="name@example.com"
+                         autocomplete="email" spellcheck="false" required aria-required="true" aria-describedby="email-err">
+                  <p class="err" id="email-err" role="alert"></p>
+                </div>
+              </div>
+
+              <!-- Скан заграничного паспорта -->
+              <div class="q">
+                <label class="q__label" for="passport-scan">Скан заграничного паспорта<span class="req" aria-hidden="true">*</span></label>
+                <div class="field">
+                  <div class="drop" id="dropzone">
+                    <svg class="drop__icon" width="30" height="30" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                      <path d="M12 16V4m0 0 4.2 4.2M12 4 7.8 8.2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M3.5 15.5v2.2c0 1.3 1 2.3 2.3 2.3h12.4c1.3 0 2.3-1 2.3-2.3v-2.2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                    </svg>
+                    <span class="drop__title">Перетащите файл сюда или <span>выберите на устройстве</span></span>
+                    <span class="drop__hint">PDF, JPG или PNG · до 10 МБ</span>
+                    <input type="file" id="passport-scan" name="passport-scan"
+                           accept=".pdf,.jpg,.jpeg,.png,application/pdf,image/jpeg,image/png"
+                           multiple aria-required="true" aria-describedby="scan-err scan-hint">
+                  </div>
+                  <ul class="files" id="files" aria-live="polite"></ul>
+                  <p class="privacy" id="scan-hint">Файл используется исключительно для оформления вылета и передаётся только команде McK Partners.</p>
+                  <p class="err" id="scan-err" role="alert"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Ошибка отправки -->
+          <div class="banner" id="formBanner" role="alert"></div>
+
+          <div class="actions">
+            <button class="submit" type="submit" id="submitBtn">Отправить</button>
+            <a class="clear" href="#" id="clear">Очистить форму</a>
+          </div>
+        </div>
+      </form>
+
+      <!-- Успех -->
+      <div class="success" id="success" role="status">
+        <div class="success__icon" aria-hidden="true">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="m5 12.5 4.6 4.6L19 7.8" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h2>Спасибо!</h2>
+        <p>Мы получили ваши данные и свяжемся с вами для подтверждения участия в ретрите.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ================= ФУТЕР ================= -->
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <a class="brandlink" href="https://mck.partners" aria-label="McK Партнёры — на сайт компании">
+      <svg class="brandmark" role="img" aria-label="McK Partners"><use href="#mck-logo"></use></svg>
+    </a>
+    <div>© 2026 McK Partners</div>
+  </div>
+</footer>
+
+<script>
+/* ============================================================
+   Точка отправки данных.
+   Укажите '/api/lead' или URL вебхука (Telegram-бот, Google
+   Sheets через Make/Zapier, n8n и т.п.).
+   Пока значение пустое — демо-режим: форма показывает успех,
+   а данные выводятся в консоль браузера.
+   ============================================================ */
+const LEAD_ENDPOINT = '';
+
+const form = document.getElementById('retreatForm');
+const choiceInputs = Array.from(form.querySelectorAll('input[name="participation"]'));
+const participationField = document.getElementById('participationField');
+const formPanel = document.getElementById('formPanel');
+const travelFields = document.getElementById('travelFields');
+const passportPanel = document.getElementById('passportPanel');
+const noMsg = document.getElementById('noMsg');
+const progressFill = document.getElementById('progressFill');
+const progressLabel = document.getElementById('stepLabel');
+const progressBar = document.getElementById('progressBar');
+const submitBtn = document.getElementById('submitBtn');
+const formBanner = document.getElementById('formBanner');
+const successBox = document.getElementById('success');
+const fileInput = document.getElementById('passport-scan');
+const dropzone = document.getElementById('dropzone');
+const filesList = document.getElementById('files');
+
+const TRIP_END = new Date('2026-10-18T00:00:00');
+const MAX_SIZE = 10 * 1024 * 1024;
+const OK_TYPES = ['pdf', 'jpg', 'jpeg', 'png'];
+const REDUCED = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+let scanFiles = [];
+
+/* ---------- Раскрытие/скрытие блока ---------- */
+function openPanel(el){
+  if (el.classList.contains('is-open') && el.style.maxHeight === 'none') return;
+  el.classList.add('is-open');
+  el.style.maxHeight = '0px';
+  void el.offsetHeight;                       // рефлоу: стартовая позиция
+  el.style.maxHeight = el.scrollHeight + 'px';
+  const onEnd = (e) => {
+    if (e.propertyName !== 'max-height') return;
+    el.style.maxHeight = 'none';             // чтобы контент не обрезался
+    el.removeEventListener('transitionend', onEnd);
+  };
+  el.addEventListener('transitionend', onEnd);
+}
+function closePanel(el){
+  if (!el.classList.contains('is-open')) return;
+  el.style.maxHeight = el.scrollHeight + 'px';
+  void el.offsetHeight;
+  el.classList.remove('is-open');
+  el.style.maxHeight = '0px';
+}
+
+/* ---------- Логика гейта и шагов ---------- */
+function clearErrorsIn(root){
+  root.querySelectorAll('.field.is-invalid').forEach(f => clearFieldError(f));
+}
+function chosenValue(){
+  const checked = choiceInputs.find(r => r.checked);
+  return checked ? checked.value : '';
+}
+function setStep(step){
+  progressFill.style.width = step === 2 ? '100%' : '50%';
+  progressLabel.textContent = step === 2 ? 'Шаг 2 из 2 · Данные заграничного паспорта' : 'Шаг 1 из 2 · Ретрит';
+  progressBar.setAttribute('aria-valuenow', String(step));
+  progressBar.setAttribute('aria-valuetext', progressLabel.textContent);
+}
+function setMode(){
+  const value = chosenValue();
+
+  if (value === 'Да'){
+    progressBar.classList.add('is-visible');
+    noMsg.classList.remove('show');
+    openPanel(formPanel);
+  } else {
+    closePanel(formPanel);
+    clearErrorsIn(formPanel);
+    progressBar.classList.remove('is-visible');
+    noMsg.classList.toggle('show', value === 'Нет');
+  }
+  if (participationField.classList.contains('is-invalid')) clearFieldError(participationField);
+  setStep(1);
+}
+choiceInputs.forEach(r => r.addEventListener('change', setMode));
+
+/* Шаг 2 — когда дошли до блока с данными паспорта */
+passportPanel.addEventListener('focusin', () => setStep(2));
+if (typeof IntersectionObserver === 'function'){
+  new IntersectionObserver(entries => {
+    for (const entry of entries){
+      if (entry.isIntersecting) setStep(2);
+      else if (entry.boundingClientRect.top > 0) setStep(1);
+    }
+  }, { threshold: .15 }).observe(passportPanel);
+}
+setMode();
+
+/* ---------- Ошибки ---------- */
+function setFieldError(field, msg){
+  field.classList.add('is-invalid');
+  const err = field.querySelector('.err');
+  if (err) err.textContent = msg;
+  const control = field.querySelector('.answer');
+  if (control) control.setAttribute('aria-invalid', 'true');
+}
+function clearFieldError(field){
+  field.classList.remove('is-invalid');
+  const err = field.querySelector('.err');
+  if (err) err.textContent = '';
+  field.querySelectorAll('[aria-invalid="true"]').forEach(el => el.removeAttribute('aria-invalid'));
+}
+function clearAllErrors(){
+  form.querySelectorAll('.field.is-invalid').forEach(f => clearFieldError(f));
+  formBanner.classList.remove('show');
+  formBanner.textContent = '';
+}
+/* Элемент считается видимым, только если до него реально можно дотянуться */
+function isVisible(el){
+  if (typeof el.checkVisibility === 'function'){
+    return el.checkVisibility({ checkOpacity: true, checkVisibilityCSS: true, visibilityProperty: true, opacityProperty: true });
+  }
+  const panel = el.closest('.reveal');
+  if (panel && !panel.classList.contains('is-open')) return false;
+  if (travelFields.contains(el) && travelFields.style.display === 'none') return false;
+  return el.offsetParent !== null;
+}
+function focusField(field){
+  const control = field.querySelector('.answer, input, select, textarea');
+  if (control) control.focus({ preventScroll: true });
+  field.scrollIntoView({ behavior: REDUCED.matches ? 'auto' : 'smooth', block: 'center' });
+}
+
+/* ---------- Валидация ---------- */
+function toDay(v){ return v ? new Date(v + 'T00:00:00') : null; }
+
+function validate(){
+  clearAllErrors();
+  let first = null;
+  const fail = (field, msg) => { setFieldError(field, msg); if (!first) first = field; };
+
+  // 1. Фамилия, Имя
+  const nameF = document.getElementById('name').closest('.field');
+  if (!document.getElementById('name').value.trim()) fail(nameF, 'Это обязательный вопрос');
+
+  // 2. Город вылета
+  const cityGroup = form.querySelectorAll('input[name="city"]');
+  if (isVisible(cityGroup[0]) && ![...cityGroup].some(r => r.checked)){
+    fail(cityGroup[0].closest('.field'), 'Это обязательный вопрос');
+  }
+  // Название города при выборе «Другое»
+  const cityOther = document.getElementById('city-other');
+  if (isVisible(cityOther) && !cityOther.value.trim()) fail(cityOther.closest('.field'), 'Это обязательный вопрос');
+  // 4. Рейс
+  const flightGroup = form.querySelectorAll('input[name="flight"]');
+  if (isVisible(flightGroup[0]) && ![...flightGroup].some(r => r.checked)){
+    fail(flightGroup[0].closest('.field'), 'Это обязательный вопрос');
+  }
+
+  if (isVisible(passportPanel)){
+    // Обязательные текстовые поля паспорта
+    ['latin', 'passportNo', 'authority'].forEach(id => {
+      const el = document.getElementById(id);
+      if (isVisible(el) && !el.value.trim()) fail(el.closest('.field'), 'Это обязательный вопрос');
+    });
+
+    // Дата выдачи
+    const issued = document.getElementById('issued');
+    if (isVisible(issued)){
+      const d = toDay(issued.value);
+      if (!d) fail(issued.closest('.field'), 'Это обязательный вопрос');
+      else if (d > new Date()) fail(issued.closest('.field'), 'Укажите дату не позже сегодняшней');
+    }
+    // Срок действия
+    const expiry = document.getElementById('expiry');
+    if (isVisible(expiry)){
+      const d = toDay(expiry.value);
+      const i = toDay(issued.value);
+      if (!d) fail(expiry.closest('.field'), 'Это обязательный вопрос');
+      else if (i && d <= i) fail(expiry.closest('.field'), 'Срок действия должен быть позже даты выдачи');
+      else if (d < TRIP_END) fail(expiry.closest('.field'), 'Паспорт должен действовать на даты поездки — до 18.10.2026');
+    }
+    // Дата рождения
+    const birth = document.getElementById('birth');
+    if (isVisible(birth)){
+      const d = toDay(birth.value);
+      if (!d) fail(birth.closest('.field'), 'Это обязательный вопрос');
+      else if (d > new Date() || d.getFullYear() < 1900) fail(birth.closest('.field'), 'Укажите корректную дату рождения');
+    }
+    // Пол
+    const sexGroup = form.querySelectorAll('input[name="sex"]');
+    if (isVisible(sexGroup[0]) && ![...sexGroup].some(r => r.checked)){
+      fail(sexGroup[0].closest('.field'), 'Это обязательный вопрос');
+    }
+    // Телефон
+    const phone = document.getElementById('phone');
+    if (isVisible(phone) && !/^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$/.test(phone.value)){
+      fail(phone.closest('.field'), phone.value.trim() ? 'Введите телефон в формате +7 (___) ___-__-__' : 'Это обязательный вопрос');
+    }
+    // Email
+    const email = document.getElementById('email');
+    if (isVisible(email)){
+      if (!email.value.trim()) fail(email.closest('.field'), 'Это обязательный вопрос');
+      else if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email.value.trim())) fail(email.closest('.field'), 'Введите корректный email');
+    }
+    // Скан паспорта
+    const scanField = fileInput.closest('.field');
+    if (isVisible(fileInput) && scanFiles.length === 0){
+      fail(scanField, 'Прикрепите скан заграничного паспорта');
+    }
+  }
+  return first;
+}
+
+/* Снимаем ошибку, как только пользователь начинает правку */
+form.addEventListener('input', e => {
+  const field = e.target.closest('.field');
+  if (field && field.classList.contains('is-invalid')) clearFieldError(field);
+});
+form.addEventListener('change', e => {
+  const field = e.target.closest('.field');
+  if (field && field.classList.contains('is-invalid')) clearFieldError(field);
+});
+
+/* ---------- Город вылета: вариант «Другое» ---------- */
+const cityOtherWrap = document.querySelector('.city-other');
+const cityOtherInput = document.getElementById('city-other');
+function syncCityOther(){
+  const sel = form.querySelector('input[name="city"]:checked');
+  const isOther = !!sel && sel.value === 'Другое';
+  cityOtherWrap.hidden = !isOther;
+  if (!isOther){
+    cityOtherInput.value = '';
+    clearFieldError(cityOtherInput.closest('.field'));
+  }
+}
+form.querySelectorAll('input[name="city"]').forEach(r => r.addEventListener('change', syncCityOther));
+
+/* ---------- Маска телефона ---------- */
+const phone = document.getElementById('phone');
+phone.addEventListener('input', () => {
+  let d = phone.value.replace(/\D/g, '');
+  if (d.startsWith('8')) d = '7' + d.slice(1);
+  if (d.startsWith('7')) d = d.slice(1);
+  d = d.slice(0, 10);
+  let out = '+7';
+  if (d.length) out += ' (' + d.slice(0, 3);
+  if (d.length >= 3) out += ') ';
+  if (d.length > 3) out += d.slice(3, 6);
+  if (d.length >= 6) out += '-' + d.slice(6, 8);
+  if (d.length >= 8) out += '-' + d.slice(8, 10);
+  phone.value = out;
+});
+
+/* ---------- Минимальный срок действия паспорта ---------- */
+const issued = document.getElementById('issued');
+const expiry = document.getElementById('expiry');
+issued.addEventListener('change', () => { if (issued.value) expiry.min = issued.value; });
+
+/* ---------- Загрузка скана ---------- */
+function formatSize(bytes){
+  if (bytes < 1024) return bytes + ' Б';
+  if (bytes < 1024 * 1024) return Math.round(bytes / 1024) + ' КБ';
+  return (bytes / (1024 * 1024)).toFixed(1).replace('.', ',') + ' МБ';
+}
+function renderFiles(){
+  filesList.innerHTML = '';
+  scanFiles.forEach((f, i) => {
+    const li = document.createElement('li');
+    const icon = document.createElement('span');
+    icon.className = 'files__icon';
+    icon.setAttribute('aria-hidden', 'true');
+    icon.innerHTML = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M6 2.8h7.4L19 8.4V21H6V2.8Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M13.2 3v5.6H19" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>';
+    const name = document.createElement('span');
+    name.className = 'files__name';
+    name.textContent = f.name;
+    name.title = f.name;
+    const size = document.createElement('span');
+    size.className = 'files__size';
+    size.textContent = formatSize(f.size);
+    const rm = document.createElement('button');
+    rm.type = 'button';
+    rm.className = 'files__rm';
+    rm.textContent = '×';
+    rm.setAttribute('aria-label', 'Удалить файл ' + f.name);
+    rm.addEventListener('click', () => { scanFiles.splice(i, 1); renderFiles(); });
+    li.append(icon, name, size, rm);
+    filesList.appendChild(li);
+  });
+}
+function addFiles(list){
+  const field = fileInput.closest('.field');
+  let rejected = false;
+  [...list].forEach(f => {
+    const ext = (f.name.split('.').pop() || '').toLowerCase();
+    if (!OK_TYPES.includes(ext) || f.size > MAX_SIZE){ rejected = true; return; }
+    if (!scanFiles.some(x => x.name === f.name && x.size === f.size)) scanFiles.push(f);
+  });
+  renderFiles();
+  if (rejected) setFieldError(field, 'Допустимы PDF, JPG и PNG размером до 10 МБ');
+  else if (field.classList.contains('is-invalid')) clearFieldError(field);
+}
+fileInput.addEventListener('change', () => {
+  addFiles(fileInput.files);
+  fileInput.value = '';               // чтобы можно было приложить тот же файл повторно
+});
+['dragenter', 'dragover'].forEach(ev => dropzone.addEventListener(ev, e => {
+  e.preventDefault(); dropzone.classList.add('is-drag');
+}));
+['dragleave', 'drop'].forEach(ev => dropzone.addEventListener(ev, e => {
+  e.preventDefault(); dropzone.classList.remove('is-drag');
+}));
+dropzone.addEventListener('drop', e => { if (e.dataTransfer && e.dataTransfer.files) addFiles(e.dataTransfer.files); });
+
+/* ---------- Отправка ---------- */
+form.addEventListener('submit', async e => {
+  e.preventDefault();
+
+  /* Гейт: отправка возможна только при выбранном «Да» */
+  const value = chosenValue();
+  if (value !== 'Да'){
+    if (!value){
+      setFieldError(participationField, 'Это обязательный вопрос');
+      focusField(participationField);
+    }
+    return;
+  }
+
+  const firstInvalid = validate();
+  if (firstInvalid){ focusField(firstInvalid); return; }
+
+  submitBtn.disabled = true;
+  submitBtn.textContent = 'Отправка…';
+
+  const fd = new FormData(form);
+  const citySel = form.querySelector('input[name="city"]:checked');
+  if (citySel && citySel.value === 'Другое'){
+    const custom = cityOtherInput.value.trim();
+    if (custom){ fd.set('city', custom); fd.delete('city_other'); }
+  }
+  scanFiles.forEach(f => fd.append('passport-scan', f, f.name));
+
+  try {
+    if (LEAD_ENDPOINT){
+      const res = await fetch(LEAD_ENDPOINT, { method: 'POST', body: fd });
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+    } else {
+      await new Promise(r => setTimeout(r, 500));
+      const demo = {};
+      fd.forEach((v, k) => { demo[k] = (v instanceof File) ? v.name : v; });
+      console.info('[Демо-режим] Установите LEAD_ENDPOINT для реальной отправки. Данные формы:', demo);
+    }
+  } catch (err){
+    formBanner.textContent = 'Не удалось отправить форму. Проверьте соединение и попробуйте ещё раз.';
+    formBanner.classList.add('show');
+    formBanner.scrollIntoView({ behavior: REDUCED.matches ? 'auto' : 'smooth', block: 'center' });
+    submitBtn.disabled = false;
+    submitBtn.textContent = 'Отправить';
+    return;
+  }
+
+  form.style.display = 'none';
+  successBox.classList.add('show');
+  progressFill.style.width = '100%';
+  progressLabel.textContent = 'Форма отправлена';
+  progressBar.setAttribute('aria-valuenow', '2');
+  progressBar.setAttribute('aria-valuetext', 'Форма отправлена');
+  successBox.scrollIntoView({ behavior: REDUCED.matches ? 'auto' : 'smooth', block: 'center' });
+});
+
+/* ---------- Очистка формы ---------- */
+document.getElementById('clear').addEventListener('click', e => {
+  e.preventDefault();
+  if (!window.confirm('Очистить форму? Все введённые данные будут удалены.')) return;
+  form.reset();
+  syncCityOther();
+  scanFiles = [];
+  renderFiles();
+  clearAllErrors();
+  setMode();
+  choiceInputs[0].focus({ preventScroll: true });
+  document.getElementById('form').scrollIntoView({ behavior: REDUCED.matches ? 'auto' : 'smooth', block: 'start' });
+});
+
+</script>
+</body>
+</html>
