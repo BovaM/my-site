@@ -11,11 +11,11 @@
 <meta property="og:description" content="Корпоративное путешествие McK Partners — 15–18 октября 2026 года.">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="McK Партнёры">
-<meta property="og:image" content="https://static.tildacdn.com/tild3264-6539-4634-b661-366264323235/photo.jpg">
+<meta property="og:image" content="https://bovam.github.io/my-site/assets/trip/collage.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Путешествие McK Partners — приглашение">
 <meta name="twitter:description" content="Корпоративное путешествие McK Partners — 15–18 октября 2026 года.">
-<meta name="twitter:image" content="https://static.tildacdn.com/tild3264-6539-4634-b661-366264323235/photo.jpg">
+<meta name="twitter:image" content="https://bovam.github.io/my-site/assets/trip/collage.jpg">
 
 <link rel="shortcut icon" href="https://static.tildacdn.com/tild6334-3232-4131-b365-376563663362/FAV.jpg" type="image/x-icon">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -73,10 +73,6 @@ b,strong{font-weight:600}
 .section{padding:clamp(64px,8vw,112px) 0}
 
 /* ============ 3. Типографика ============ */
-.eyebrow{
-  margin:0 0 22px;font-size:12px;font-weight:600;letter-spacing:.18em;
-  text-transform:uppercase;color:var(--brand);
-}
 .kicker{
   margin:0 0 16px;font-size:12px;font-weight:600;letter-spacing:.16em;
   text-transform:uppercase;color:var(--muted);
@@ -463,7 +459,6 @@ input[type="date"].answer::-webkit-calendar-picker-indicator:hover{opacity:.9}
 
     <div class="hero__grid">
       <div>
-        <p class="eyebrow">McK Partners · 15—18 October 2026</p>
         <h1>Приглашение на путешествие McK Partners</h1>
         <p class="lead">Четыре дня вне привычного ритма — чтобы встретиться, перезагрузиться и провести время вместе.</p>
         <div class="hero__actions">
@@ -554,7 +549,7 @@ input[type="date"].answer::-webkit-calendar-picker-indicator:hover{opacity:.9}
 
         <!-- Сообщение при «Нет» -->
         <div class="no-msg" id="noMsg" role="status">
-          <b>Спасибо, что ответили!</b><br>Ждём вас в следующий раз.
+          <b>Спасибо за Ваш ответ!</b>
         </div>
 
         <!-- Прогресс: появляется после выбора «Да» -->
@@ -649,7 +644,7 @@ input[type="date"].answer::-webkit-calendar-picker-indicator:hover{opacity:.9}
             <div class="card__head">
               <div>
                 <h2 class="card__title">Данные заграничного паспорта</h2>
-                <p class="card__sub">Для оформления вылета нам нужны данные вашего заграничного паспорта</p>
+                <p class="card__sub">Организаторам путешествия понадобятся данные Вашего заграничного паспорта для бронирования билетов.</p>
               </div>
             </div>
 
@@ -716,38 +711,6 @@ input[type="date"].answer::-webkit-calendar-picker-indicator:hover{opacity:.9}
                   <input class="answer" id="birth" name="birth" type="date" required aria-required="true" aria-describedby="birth-err birth-hint">
                   <p class="q__hint" id="birth-hint">дд.мм.гггг</p>
                   <p class="err" id="birth-err" role="alert"></p>
-                </div>
-              </div>
-
-              <!-- Пол -->
-              <fieldset class="q field">
-                <legend class="q__label">Пол<span class="req" aria-hidden="true">*</span></legend>
-                <div class="opts">
-                  <label class="opt"><input type="radio" name="sex" value="Муж" required><span class="opt__text">Муж</span></label>
-                  <label class="opt"><input type="radio" name="sex" value="Жен"><span class="opt__text">Жен</span></label>
-                </div>
-                <p class="err" id="sex-err" role="alert"></p>
-              </fieldset>
-
-              <!-- Телефон -->
-              <div class="q">
-                <label class="q__label" for="phone">Контактный телефон<span class="req" aria-hidden="true">*</span></label>
-                <div class="field">
-                  <input class="answer" id="phone" name="phone" type="text" inputmode="numeric"
-                         placeholder="+7 (___) ___-__-__" autocomplete="tel" required aria-required="true"
-                         aria-describedby="phone-err phone-hint">
-                  <p class="q__hint" id="phone-hint">Формат: +7 (___) ___-__-__</p>
-                  <p class="err" id="phone-err" role="alert"></p>
-                </div>
-              </div>
-
-              <!-- Email -->
-              <div class="q">
-                <label class="q__label" for="email">Email<span class="req" aria-hidden="true">*</span></label>
-                <div class="field">
-                  <input class="answer" id="email" name="email" type="email" placeholder="name@example.com"
-                         autocomplete="email" spellcheck="false" required aria-required="true" aria-describedby="email-err">
-                  <p class="err" id="email-err" role="alert"></p>
                 </div>
               </div>
 
@@ -996,22 +959,6 @@ function validate(){
       if (!d) fail(birth.closest('.field'), 'Это обязательный вопрос');
       else if (d > new Date() || d.getFullYear() < 1900) fail(birth.closest('.field'), 'Укажите корректную дату рождения');
     }
-    // Пол
-    const sexGroup = form.querySelectorAll('input[name="sex"]');
-    if (isVisible(sexGroup[0]) && ![...sexGroup].some(r => r.checked)){
-      fail(sexGroup[0].closest('.field'), 'Это обязательный вопрос');
-    }
-    // Телефон
-    const phone = document.getElementById('phone');
-    if (isVisible(phone) && !/^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$/.test(phone.value)){
-      fail(phone.closest('.field'), phone.value.trim() ? 'Введите телефон в формате +7 (___) ___-__-__' : 'Это обязательный вопрос');
-    }
-    // Email
-    const email = document.getElementById('email');
-    if (isVisible(email)){
-      if (!email.value.trim()) fail(email.closest('.field'), 'Это обязательный вопрос');
-      else if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email.value.trim())) fail(email.closest('.field'), 'Введите корректный email');
-    }
     // Скан паспорта
     const scanField = fileInput.closest('.field');
     if (isVisible(fileInput) && scanFiles.length === 0){
@@ -1044,22 +991,6 @@ function syncCityOther(){
   }
 }
 form.querySelectorAll('input[name="city"]').forEach(r => r.addEventListener('change', syncCityOther));
-
-/* ---------- Маска телефона ---------- */
-const phone = document.getElementById('phone');
-phone.addEventListener('input', () => {
-  let d = phone.value.replace(/\D/g, '');
-  if (d.startsWith('8')) d = '7' + d.slice(1);
-  if (d.startsWith('7')) d = d.slice(1);
-  d = d.slice(0, 10);
-  let out = '+7';
-  if (d.length) out += ' (' + d.slice(0, 3);
-  if (d.length >= 3) out += ') ';
-  if (d.length > 3) out += d.slice(3, 6);
-  if (d.length >= 6) out += '-' + d.slice(6, 8);
-  if (d.length >= 8) out += '-' + d.slice(8, 10);
-  phone.value = out;
-});
 
 /* ---------- Минимальный срок действия паспорта ---------- */
 const issued = document.getElementById('issued');
