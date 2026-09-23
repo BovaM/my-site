@@ -299,6 +299,22 @@ input[type="date"].answer::-webkit-calendar-picker-indicator:hover{opacity:.9}
   background:#FDF0EF;border:1px solid #F3C9C6;color:#A32B22;font-size:14px;
 }
 
+/* --- Согласие на обработку персональных данных --- */
+.consent-field{margin-top:20px}
+.consent{display:flex;align-items:flex-start;gap:11px;cursor:pointer;-webkit-user-select:none;user-select:none}
+.consent__input{position:absolute;top:0;left:0;width:22px;height:22px;margin:0;opacity:0;cursor:pointer}
+.consent__box{
+  flex:none;width:22px;height:22px;margin-top:1px;display:grid;place-items:center;
+  background:#fff;border:1.5px solid var(--line-input);border-radius:4px;color:#fff;
+  transition:background-color .15s ease,border-color .15s ease;
+}
+.consent__box svg{width:14px;height:14px;opacity:0;transform:scale(.5);transition:opacity .15s ease,transform .15s ease}
+.consent__input:checked + .consent__box{background:var(--brand);border-color:var(--brand)}
+.consent__input:checked + .consent__box svg{opacity:1;transform:scale(1)}
+.consent__input:focus-visible + .consent__box{outline:2px solid var(--accent);outline-offset:2px}
+.field.is-invalid .consent__box{border-color:var(--red)}
+.consent__text{font-size:14px;line-height:1.5;color:var(--ink)}
+
 .actions{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:26px}
 .submit{
   background:var(--brand);color:#fff;border:0;border-radius:4px;
@@ -639,6 +655,18 @@ input[type="date"].answer::-webkit-calendar-picker-indicator:hover{opacity:.9}
           <!-- Ошибка отправки -->
           <div class="banner" id="formBanner" role="alert"></div>
 
+          <!-- Согласие на обработку персональных данных -->
+          <div class="field consent-field">
+            <label class="consent" for="consent">
+              <input class="consent__input" id="consent" name="consent" type="checkbox" required aria-required="true" aria-describedby="consent-err">
+              <span class="consent__box" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="m5 12.5 4.6 4.6L19 7.8" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+              <span class="consent__text">Даю согласие на обработку персональных данных<span class="req" aria-hidden="true">*</span></span>
+            </label>
+            <p class="err" id="consent-err" role="alert"></p>
+          </div>
+
           <div class="actions">
             <button class="submit" type="submit" id="submitBtn">Отправить</button>
             <a class="clear" href="#" id="clear">Очистить форму</a>
@@ -853,6 +881,11 @@ function validate(){
     }
     // Скан паспорта удалён из формы
   }
+
+  // Согласие на обработку персональных данных
+  const consent = document.getElementById('consent');
+  if (!consent.checked) fail(consent.closest('.field'), 'Это обязательный вопрос');
+
   return first;
 }
 
